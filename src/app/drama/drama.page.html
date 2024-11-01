@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultFref="/home" text="Volver"></ion-back-button>
+    </ion-buttons>
+    <ion-title>drama</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-card>
+        <img alt="" src="{{item.posterURL}}" />
+        <ion-card-header>
+          <ion-card-title>{{item.title}}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  </ion-content>

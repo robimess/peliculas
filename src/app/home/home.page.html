@@ -1,20 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      PeliculAPIs
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="ion-text-center">
+  <br>
+  <div class="container">
+    <ion-list class="ion-text-center">
+      <ion-button routerLink="/animacion">animacion</ion-button><br>
+      <ion-button routerLink="/clasicos">clasicos</ion-button><br>
+      <ion-button routerLink="/comedia">comedia</ion-button><br>
+      <ion-button routerLink="/drama">drama</ion-button><br>
+      <ion-button routerLink="/familiar">familiar</ion-button><br>
+      <ion-button routerLink="/misterio">misterio</ion-button><br>
+    </ion-list>
   </div>
 </ion-content>
